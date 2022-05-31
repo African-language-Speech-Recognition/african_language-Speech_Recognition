@@ -24,15 +24,15 @@
 
 African language Speech Recognition - Speech-to-Text Collaborative Project.
 ## Overview
-This repository is used for week 4 challenge of 10Academy. The instructions for this project can be found in the challenge document. This is a collaborative project between eight students at the bootcamp:
-1.Danayt Bulom
-2.Faith Bagire 
-3.Yonas Tadesse 
-4.Diye Mark
-5.Daisy Okacha 
-6.Gezahegne Wondachew Elem
-7.Hikma Burhan 
-8.Ammon Leulseged
+This repository is used for week 4 challenge of `10Academy`. The instructions for this project can be found in the challenge document. This is a collaborative project between eight trainers at `10Academy` bootcamp:
+1. `Danayt Bulom`
+2. `Faith Bagire `
+3. `Yonas Tadesse` 
+4. `Diye Mark`
+5. `Daisy Okacha `
+6. `Gezahegne Wondachew`
+7. `Hikma Burhan `
+8. `Ammon Leulseged`
 
 
 ## Scenario
@@ -68,10 +68,15 @@ The repository has a number of files including python scripts, jupyter notebooks
 ### logs:
 - the folder containing log files (if it doesn't exist it will be created once logging starts)
 
-### root folder
+### team_screenshots
 - the root folder of the project
 ## Installation guide
-```
+
 git clone https://github.com/African-language-Speech-Recognition/african_language-Speech_Recognition.git
 cd african_language-Speech_Recognition
 pip install -r requirements.txt
+
+## Source of The Dataset
+- This repo uses public dataset provided by ALFFA_PUBLIC [ https://github.com/besacier/ALFFA_PUBLIC/tree/master/ASR/AMHARIC ]
+
+```
