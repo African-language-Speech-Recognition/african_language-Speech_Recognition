@@ -8,11 +8,9 @@ import random
 import matplotlib.pyplot as plt
 from os.path import exists
 import seaborn as sns
-from functools import reduce
 import os,sys
 from sklearn.impute import SimpleImputer
 from sklearn.decomposition import PCA
-from sklearn.preprocessing import OneHotEncoder, MinMaxScaler
 from sklearn.pipeline import Pipeline
 import torch
 import torchaudio
