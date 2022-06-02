@@ -52,7 +52,7 @@ The project is divided and implemented by the following phases
 The repository has a number of files including python scripts, jupyter notebooks, pdfs and text files. Here is their structure with a brief explanation.
 
 ### ML Pipeline Design
-![image](mlp.jpg)
+![mlp](https://user-images.githubusercontent.com/99503155/171685764-d5601da9-b44f-45e1-8222-fbdab0befe42.jpg)
 
 ### data:
 - the folder where the dataset csv files are stored
