@@ -20,22 +20,18 @@ HERE = Path(__file__).parent
 RECORDED = HERE / "recordings/temp.wav"
 UPLOADED = HERE / "recordings/uploaded.wav"
 RESAMPLED = HERE / "recordings/resampled.wav"
-EXAMPLE_1 = HERE / "recordings/destroy_him_my_robots.wav"
-EXAMPLE_2 = HERE / "recordings/the_jungle_book2.wav"
-EXAMPLE_3 = HERE / "recordings/the_jungle_book1.wav"
+
 
 SAMPLERATE = 16000
 
 # page-config:
-st.set_page_config(page_title="Speech Recognition Demo",
+st.set_page_config(page_title="Speech Recognition app",
                    page_icon=":robot_face:")
-st.title('Speech Recognition Demo')
+st.title('Speech Recognition app')
 st.markdown(
     """
 This demo app is using a simplified end-to-end speech recognition engine similar to DeepSpeech2.
-It was trained on the LibriSpeech dataset with 100 hours of English speech and is a work in progress.
-The word-error-rate on the test data is currently at 14%. A good microphone is recommended.\n
-More information can be found [here](https://github.com/to-schi/speech-recognition-from-scratch).
+It was trained on the Amharic dataset and is able to recognize words and phrases from speech.
 """
 )
 # color "st.buttons" in main page light blue:
@@ -62,11 +58,11 @@ def read_audio(file):
 
 def main():
     # Download model-file if not existing and set session_state['model'] = True
-    download_file(MODEL_URL, MODEL_LOCAL_PATH, expected_size=112500560) #expected_size= 112500560 337407816
+    #download_file(MODEL_URL, MODEL_LOCAL_PATH, expected_size=112500560) #expected_size= 112500560 337407816
 
     # set 3 pages to select in sidebar:
     page = st.sidebar.selectbox(
-        "Choose an option:", ['Record speech', 'Open wav-file', 'Examples'])
+        "Choose an option:", ['Record speech', 'Open wav-file'])
 
     if page == 'Record speech':
         st.header('Record speech')
@@ -100,7 +96,7 @@ def main():
             # predict with PredictionService
             st.audio(read_audio(RESAMPLED), format='audio/wav')
             st.write("Transcribing...")
-            prediction = ps.make_prediction(str(RESAMPLED))
+            #prediction = ps.make_prediction(str(RESAMPLED))
             st.write(f"**Prediction:  '{prediction}'**")
 
     else:
@@ -109,7 +105,7 @@ def main():
         first = st.container()
         second = st.container()
         third = st.container()
-
+  
         first.audio(read_audio(EXAMPLE_1), format='audio/wav')
         first.write("Text: 'destroy him my robots' (Impossible Mission)")
         example1 = first.button("Transcribe", key=1)
@@ -150,7 +146,8 @@ if __name__ == '__main__':
 
     fsevents_logger = logging.getLogger("fsevents")
     fsevents_logger.setLevel(logging.WARNING)
+    main()
     
-    if st.session_state['model'] == False:
+    #if st.session_state['model'] == False:
        #ps = Prediction_Service()
-     main()
+      # main()
