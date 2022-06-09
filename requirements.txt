@@ -1,3 +1,12 @@
 setuptools==62.3.2
 dvc~=2.10.2
 mlflow==1.26.1
+
+pandas~=1.4.2
+librosa~=0.9.1
+numpy~=1.22.4
+matplotlib~=3.5.2
+ipython~=8.4.0
+scikit-learn~=1.1.1
+scipy~=1.8.1
+tensorflow~=2.7.0
