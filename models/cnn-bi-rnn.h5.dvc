@@ -1,0 +1,4 @@
+outs:
+- md5: 9588666396b65d6786b6a0d49c9aab1d
+  size: 66209832
+  path: cnn-bi-rnn.h5

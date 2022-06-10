@@ -16,7 +16,7 @@ logger = logging.getLogger(__name__)
 # file+path-variables:
 HERE = Path(__file__).parent
 #MODEL_URL = "https://www.dropbox.com/s/w4sii4o7fa4mxds/RNN_mel2_last_vl35.6.h5?raw=1"
-#MODEL_LOCAL_PATH = HERE / "model/DeepSpeech_RNN.h5"
+MODEL_LOCAL_PATH = HERE / "model/cnn-bi-rnn.h5"
 RECORDED = HERE / "recordings/temp.wav"
 UPLOADED = HERE / "recordings/uploaded.wav"
 RESAMPLED = HERE / "recordings/resampled.wav"
